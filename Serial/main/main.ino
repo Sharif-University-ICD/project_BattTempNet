@@ -84,11 +84,7 @@ void loop() {
         float predictedTemperature = interpreter->output(0)->data.f[0];
 
         // Printing the predicted temperature and input values
-        Serial.println("predicted: " + String(predictedTemperature) + 
-              ", voltage: " + String(input_data[0]) + 
-              ", current: " + String(input_data[1]) + 
-              ", time: " + String(input_data[2]) + 
-              ", state: " + String(input_data[3]));
+        Serial.println( String(predictedTemperature));
     }
 
     // Serial.println(predictedTemperature);
